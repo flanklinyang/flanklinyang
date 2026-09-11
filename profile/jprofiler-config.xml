@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="12.0">
+  <sessions>
+    <session id="100"
+             name="PaperCheck CPU Profile"
+             type="launch"
+             mainClass="ProfileRunner"
+             methodCallRecordingType="sampling">
+      <filters>
+        <filter type="inclusive" name="papercheck." />
+        <filter type="inclusive" name="ProfileRunner" />
+      </filters>
+      <classPath>
+        <entry path="classes" />
+      </classPath>
+    </session>
+  </sessions>
+</config>
