@@ -31,4 +31,10 @@ mvn clean package
 java -jar target/main.jar sample/orig.txt sample/copied.txt sample/ans.txt
 ```
 
-单元测试位于 `src/test/java/papercheck/`，覆盖核心算法、文件读写、命令行参数和异常路径。
+完整验证命令为：
+
+```text
+mvn clean verify
+```
+
+该命令会运行单元测试、JaCoCo 覆盖率统计和 SpotBugs 代码质量检查。单元测试位于 `src/test/java/papercheck/`，覆盖核心算法、文件读写、命令行参数和异常路径。
